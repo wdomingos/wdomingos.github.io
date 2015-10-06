@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Objeto de aprendizagem</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="booklet/jquery.booklet.latest.css">
+
+<!--[if IE]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+	<main>
+
+		<div class="stage-0"> <!-- DIV global -->
+			<article class="tela"> <!-- Textos que vistos fora do livro -->
+				<p>
+					Diversas teorias nasceram para embasar o processo de administrar e com o tempo outras mais atualizadas foram surgindo. 
+				</p>
+				<p id="azul">
+					Vamos aprender mais sobre elas.
+				</p>
+			</article>
+			<div class="booklet" id="mybook">
+			    <div class="b-page b-page-0 b-pN">
+			        <div class="b-wrap b-page-cover">
+			            00
+			        </div>
+			    </div>
+			    <div class="b-page b-page-1 b-p0">
+			        <div class=" b-wrap">
+			           01
+			        </div>
+			    </div>
+			    <div class="b-page b-page-2 b-p1">
+			        <div class="b-wrap">
+			            02
+			        </div>
+			    </div>
+			    <div class="b-page b-page-3 b-p2">
+			        <div class="b-wrap">
+			           03
+			        </div>
+				</div>
+				<div class=" b-page b-page-4 b-p3">
+			        <div class="b-wrap">
+			            04
+			        </div>
+				</div>
+				<div class="b-page b-page-5 b-p4">
+			        <div class="b-wra">
+			            05
+			        </div>
+				</div>
+				<div class="b-page b-page-6">
+			        <div class="b-wrap">
+			            06
+			        </div>
+				</div>
+				<div class="b-page b-page-7">
+			        <div class="b-wra">
+			            07
+			        </div>
+				</div>
+				<div class="b-page b-page-8">
+			        <div class="b-wrap b-page-cover">
+			            08
+			        </div>
+				</div>	
+			</div>
+		</div>
+
+	</main>
+
+</body>
+
+	<script src="js/custom.js"></script>
+	
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script> window.jQuery || document.write('<script src="booklet/jquery-2.1.0.min.js"><\/script>') </script>
+	 
+	<!-- jQuery UI (optional) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script> window.jQuery.ui || document.write('<script src="booklet/jquery-ui-1.10.4.custom.min.js"><\/script>') </script>
+	 
+	<!-- Booklet -->
+	<script src="booklet/jquery.easing.1.3.js"></script>
+	<script src="booklet/jquery.booklet.latest.min.js"></script>
+
+
+	<script>
+		$(function() {
+		    $('#mybook').booklet({
+		        closed: true,
+        		covers: true,
+        		shadows: false,
+        		hovers: false,
+		        width:  660,
+		        height: 458
+		    });
+		});   
+	</script>
+
+</html>
