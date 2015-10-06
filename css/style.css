@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* preloader */
+#preloader{
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0; height: 100%;
+  background: #ffffff;
+  z-index: 9999;
+}
+#status{
+  position: absolute; width: 200px; height: 200px; left: 50%; top: 50%; margin: -100px 0 0 -100px; text-align: center; line-height: 200px;
+  /*background-image: url(ajax-loader.gif);*/
+  background-repeat: no-repeat; background-position: center;
+}
+/* preloader */
+
+
+*, :before, :after {    
+    margin: 0; padding: 0; outline: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+body{
+    font-family: AvenirNextCondensed-Regular,'Trebuchet ms', Arial, Helvetica, sans-serif;
+    font-size:100%; 
+    color: #000000;
+    background: #fffccc; 
+}
+
+main{
+    position: absolute; left: 50%; top: 50%; margin: -260px 0 0 -480px;
+    width: 960px; height: 520px;
+    background: url(../img/bg.png) no-repeat center center; 
+}
+
+.tela {
+    position: absolute;
+    width: 295px; height: 360px;
+    margin: 80px 36px 0 36px;
+    padding:  0 0 30px 0;
+    font-size: 1.988em;
+}
+
+.tela #azul{
+    color: #2b478a;
+    padding: 25px 0 0 0;
+}
